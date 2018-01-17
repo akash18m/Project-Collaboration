@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="Header2" class="Header">
+    <p id="Header_text">Collaboration</p>
+    <button class="button" id="GoTask">Tasks</button>
+</div>
+
+<div id="Header3" style="background-color: darkblue; font: 25px;" class="Header">
+    <p id="Header_text">Team - XYZ</p>
+    <div>
+        <a class="button" id="AddUser" href="#popup1">Add User</a>
+    </div>
+</div>
+
+<!--<div id="wrapper">-->
+<div id="UList1" class="UList" >
+
+    <div class="container">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="NameContainer">
+            <h4><b>John Doe</b></h4>
+        </div>
+        <div class="overlay">
+            <div id="User1Details" class="UserDetails">
+                <p id="Name"> <p class="title"> Name: <a href="#popup1"><img class="edit" src="edit.jpg"></a></p>XYZ</p>
+                <p id="Role"> <p class="title">Role: </p>XYZ </p>
+                <p id="Pending"> <p class="title">Tasks Pending: </p>0</p>
+                <p id="Done"> <p class="title">Tasks Done: </p>0</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="NameContainer">
+            <h4><b>John Doe</b></h4>
+        </div>
+        <div class="overlay">
+            <div id="User1Details" class="UserDetails">
+                <p id="Name"> <p class="title"> Name: <a href="#popup1"><img class="edit" src="edit.jpg"></a></p>XYZ</p>
+                <p id="Role"> <p class="title">Role: </p>XYZ </p>
+                <p id="Pending"> <p class="title">Tasks Pending: </p>0</p>
+                <p id="Done"> <p class="title">Tasks Done: </p>0</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="popup1" class="overlay1">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <form>
+                Name:<br>
+                <input type="text">
+                <br>
+                Image:<br>
+                <input type="file">
+                <br>
+                Role:<br>
+                <input type="text">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
