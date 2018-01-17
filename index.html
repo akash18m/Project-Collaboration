@@ -1,130 +1,121 @@
 <!doctype html>
 <html class="no-js" lang="">
-<head>
-    <!--<meta charset="utf-8">-->
-    <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
-    <title>Project Collaboration</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <!--<meta name="description" content="">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <head>
+        <title>Project Collaboration</title>
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
 
-    <!--<link rel="manifest" href="site.webmanifest">-->
-    <!--<link rel="apple-touch-icon" href="icon.png">-->
-    <!--&lt;!&ndash; Place favicon.ico in the root directory &ndash;&gt;-->
-
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<!--[if lte IE 9]>
-<!--<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>-->
-<!--<![endif]&ndash;&gt;-->
-
-<div id="Header1" class="Header">
-    <p id="Header_text">Collaboration</p>
-    <button class="button" id="GoTeam">Team Page</button>
-</div>
-
-<div id="Header3" style="background-color: darkblue; font: 25px;" class="Header">
-    <p id="Header_text">Team - XYZ</p>
-    <button class="button" id="AddTask">Add Task</button>
-</div>
-
-<div id="wrapper">
-    <div class="filter">
-        <input type="checkbox" Name="Filter"> All Tasks <br>
-        <input type="checkbox" Name="Filter"> To-do <br>
-        <input type="checkbox" Name="Filter"> Done <br>
-        <input type="checkbox" Name="Filter"> Doing <br>
-    </div>
-    <div id="TList1" class="TList" >
-        <div id="Card1" class="Card">
-            <p id="Name1" class="Name">Akash</p>
-            <p id="Task1" class="Task">Do something</p>
-            <p id="Task2" class="Task">Do something else</p>
-            <p id="Task3" class="Task">Do something else</p>
-            <!--<textarea id="NewTask" rows="3" placeholder="Add New Task Here"></textarea>-->
-            <button style="float: right">Add</button>
+        <div id="Header1" class="Header">
+            <p id="Header_text1">Collaboration</p>
+            <a class="button" id="GoTeam" href="team.html">Team Page</a>
         </div>
 
-        <div id="Card2" class="Card">
-            <p id="Name2" class="Name">XYZ</p>
-            <p id="Task5" class="Task">Do something</p>
-            <p id="Task4" class="Task">Do something else</p>
-            <!--<textarea id="NewTask" rows="3" placeholder="Add New Task Here"></textarea>-->
-            <button style="float: right">Add</button>
+        <div id="Header3" style="background-color: lavender; font-size: 30px;" class="Header">
+            <p id="Header_text2" style="color: black">Team - XYZ</p>
+            <!--<button class="button" id="AddTask">Add Task</button>-->
         </div>
 
+        <div id="wrapper">
+            <div id="TList1" class="TList" >
+                <div id="Card1" class="Card">
+                    <p id="Name1" class="Name">ABC</p>
+                    <button class="user-add-task" >Add Task</button>
+                    <div id="select-task">Select Types To List
+                        <div class="filter">
+                            <input type="checkbox" Name="Filter">Doing<br>
+                            <input type="checkbox" Name="Filter">To-do<br>
+                            <input type="checkbox" Name="Filter">Done<br>
+                        </div>
+                    </div>
+                    <p class="heading-text">Doing</p>
+                    <p id="Task1" class="Task">Do something</p>
+                    <p id="Task2" class="Task">Do something else</p>
+                    <p class="heading-text">To-do</p>
+                    <p id="Task3" class="Task">Do something</p>
+                    <p id="Task4" class="Task">Do something else</p>
+                    <p class="heading-text">Done</p>
+                    <p id="Task6" class="Task">Do something</p>
+                    <p id="Task7" class="Task">Do something else</p>
+                </div>
+
+                <div id="Card1" class="Card">
+                    <p id="Name1" class="Name">ABC</p>
+                    <button class="user-add-task" >Add Task</button>
+                    <div id="select-task">Select Types To List
+                        <div class="filter">
+                            <input type="checkbox" Name="Filter">Doing<br>
+                            <input type="checkbox" Name="Filter">To-do<br>
+                            <input type="checkbox" Name="Filter">Done<br>
+                        </div>
+                    </div>
+                    <p class="heading-text">Doing</p>
+                    <p id="Task1" class="Task">Do something</p>
+                    <p id="Task2" class="Task">Do something else</p>
+                    <p class="heading-text">To-do</p>
+                    <p id="Task3" class="Task">Do something</p>
+                    <p id="Task5" class="Task">Do something else</p>
+                    <p class="heading-text">Done</p>
+                    <p id="Task6" class="Task">Do something</p>
+                    <p id="Task7" class="Task">Do something else</p>
+                </div>
+            </div>
+
+            <div id="Details">
+                <div id="ShowDetails">
+                    <p id="Task Details"> <p class="title"> Task Details: </p>Do something</p>
+                    <p id="Assignee"> <p class="title">Assigned To: </p>Akash</p>
+                    <p id="Due Date"> <p class="title">Due Date: </p>25th Jan, 2018</p>
+                    <p id="Others"> <p class="title">Other Members: </p>Milap</p>
+                </div>
+                <!--<form id="New Task">-->
+                    <!--Task Details:<br>-->
+                    <!--<input type="text">-->
+                    <!--<br>-->
+                    <!--Assign To:<br>-->
+                    <!--<select>-->
+                        <!--<option>ABC</option>-->
+                        <!--<option>XYZ</option>-->
+                    <!--</select><br>-->
+                    <!--Due Date:<br>-->
+                    <!--<input type="date">-->
+                    <!--<br>-->
+                    <!--<input type="submit" value="Submit">-->
+                    <!--<input type="button" value="Cancel">-->
+                <!--</form>-->
+
+                <!--<form id="Edit Task">-->
+                    <!--Task Details:<br>-->
+                    <!--<input type="text">-->
+                    <!--<br>-->
+                    <!--Assign To:<br>-->
+                    <!--<select>-->
+                        <!--<option>ABC</option>-->
+                        <!--<option>XYZ</option>-->
+                    <!--</select><br>-->
+                    <!--Due Date:<br>-->
+                    <!--<input type="date">-->
+                    <!--<br>-->
+                    <!--Status:<br>-->
+                    <!--<input type="radio" name="status">Todo<br>-->
+                    <!--<input type="radio" name="status">Doing<br>-->
+                    <!--<input type="radio" name="status">Done<br>-->
+
+                    <!--<input type="submit" value="Submit">-->
+                    <!--<input type="button" value="Cancel">-->
+                <!--</form>-->
+                <div id="button-panel">
+                    <button class="small-button">Forward</button>
+                    <button class="small-button">Remove</button>
+                    <button class="small-button" href="#Edit Task">Edit</button>
+                    <br>
+                    <button style="width: 100%; margin-top: 10px" class="small-button">Add New Task</button>
+                </div>
+
+            </div>
 
 
-    </div>
-
-    <div id="Details">
-        <div id="ShowDetails">
-            <p id="Task Details"> <p class="title"> Task Details: </p>Do something</p>
-            <p id="Assignee"> <p class="title">Assigned To: </p>Akash</p>
-            <p id="Due Date"> <p class="title">Due Date: </p>25th Jan, 2018</p>
-            <p id="Others"> <p class="title">Other Members: </p>Milap</p>
         </div>
-        <!--<form id="New Task">-->
-            <!--Task Details:<br>-->
-            <!--<input type="text">-->
-            <!--<br>-->
-            <!--Assign To:<br>-->
-            <!--<select>-->
-                <!--<option>ABC</option>-->
-                <!--<option>XYZ</option>-->
-            <!--</select><br>-->
-            <!--Due Date:<br>-->
-            <!--<input type="date">-->
-            <!--<br>-->
-            <!--<input type="submit" value="Submit">-->
-            <!--<input type="button" value="Cancel">-->
-        <!--</form>-->
-
-        <!--<form id="Edit Task">-->
-            <!--Task Details:<br>-->
-            <!--<input type="text">-->
-            <!--<br>-->
-            <!--Assign To:<br>-->
-            <!--<select>-->
-                <!--<option>ABC</option>-->
-                <!--<option>XYZ</option>-->
-            <!--</select><br>-->
-            <!--Due Date:<br>-->
-            <!--<input type="date">-->
-            <!--<br>-->
-            <!--Status:<br>-->
-            <!--<input type="radio" name="status">Todo<br>-->
-            <!--<input type="radio" name="status">Doing<br>-->
-            <!--<input type="radio" name="status">Done<br>-->
-
-            <!--<input type="submit" value="Submit">-->
-            <!--<input type="button" value="Cancel">-->
-        <!--</form>-->
-        <div id="button-panel">
-            <button >Forward</button>
-            <button >Remove</button>
-            <button href="#Edit Task">Edit</button>
-        </div>
-
-    </div>
-
-
-</div>
-<!-- Add your site or application content here -->
-<!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
-<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
-<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
-<!--<script src="js/plugins.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-
-<!--<script>-->
-    <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
-    <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
-<!--</script>-->
-<!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
-</body>
+    </body>
 </html>

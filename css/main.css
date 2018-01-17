@@ -1,37 +1,16 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 body{
     margin: 0px;
     padding: 0px;
 }
 
 .Header{
-    background-color: black;
+    background-color: #026aa7;
     color: white;
     display: flex;
     height: 70px;
@@ -48,70 +27,95 @@ body{
     margin-top: 5px;
 }
 
-.filter {
-    float:left;
-    width: 15%;
-    height: 100%;
-    /*display: flex;*/
-    /*align-items: flex-start;*/
-}
 
 .TList {
     float:left;
-    width: 60%;
+    width: 75%;
     height: 100%;
     overflow-x: scroll;
     white-space: nowrap;
     display: flex;
     border-left: 2px solid black;
     align-items: flex-start;
+
 }
 
 .UList {
     float:left;
-    width: 60%;
+    width: 75%;
     height: 100%;
     white-space: nowrap;
     display: flex;
     align-items: flex-start;
+    margin: 20px;
+}
+
+#select-task{
+    color: midnightblue;
+    align-items: left;
+    font-size: 15px;
+}
+
+.small-button{
+    /*width: 10%;*/
+    cursor: pointer;
+    font-size: 15px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.filter{
+    display: none;
+}
+
+#select-task:hover{
+    font-weight: bold;
+}
+
+#select-task:hover .filter{
+    display: block;
 }
 
 #AddUser{
     position:absolute;
     right:5%;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
-    height: 38px;
+    /*height: 30px;*/
     top:10.5%;
     border-radius: 5px;
+    border: 2px solid black;
     background-color: white;
+    text-decoration: none;
 }
 
 #GoTask{
     position:absolute;
     left:5%;
     font-weight: bold;
-    font-size: 32px;
-    height: 38px;
+    font-size: 20px;
+    height: 30px;
     border-radius: 5px;
+    background-color: white;
 }
 
-#AddTask{
-    position:absolute;
-    right:5%;
-    font-weight: bold;
-    font-size: 32px;
-    height: 38px;
-    border-radius: 5px;
-}
+/*#AddTask{*/
+    /*position:absolute;*/
+    /*right:5%;*/
+    /*font-weight: bold;*/
+    /*font-size: 20px;*/
+    /*height: 30px;*/
+    /*border-radius: 5px;*/
+/*}*/
 
 
 #GoTeam{
     position:absolute;
     right:5%;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
-    height: 35px;
+    height: 30px;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -208,34 +212,56 @@ body{
 }
 
 .Card{
-    margin: 10px;
-    width: 150px;
-    min-width: 150px;
+    margin: 30px;
+    width: 250px;
+    min-width: 250px;
     padding: 5px;
     display: block;
     /*flex-wrap: wrap;*/
     overflow: scroll;
     /*!*float: left;*!*/
-    background-color: gainsboro;
+    background-color: lightgray;
     text-align: center;
     border: 2px solid black;
     overflow-wrap: break-word;
     white-space: normal;
+    border-radius: 10px;
+}
+
+.heading-text{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .Name{
     font-size: 32px;
     display: block;
-    background-color: darkgray;
-    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Arial";
+    color: midnightblue;
+    text-decoration: underline;
 }
 
 .Task{
+    font-size: 15px;
     text-align: left;
-    display: block;
-    background-color: darkgray;
+    background-color: gray;
     border: 2px solid black;
     text-wrap: normal;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.user-add-task{
+    height: 30px;
+    width: 100%;
+    font-weight: bolder;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #button-panel{
@@ -253,15 +279,15 @@ body{
     font-weight: bold ;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+/*::-moz-selection {*/
+    /*background: #b3d4fc;*/
+    /*text-shadow: none;*/
+/*}*/
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+/*::selection {*/
+    /*background: #b3d4fc;*/
+    /*text-shadow: none;*/
+/*}*/
 
 ul {
     list-style-type: none;
@@ -322,7 +348,7 @@ h1 {
     /*font-size: 1em;*/
     /*padding: 10px;*/
     color: #000;
-    border: 2px solid #06D85F;
+    border: 2px solid black;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -338,7 +364,7 @@ h1 {
 }
 
 .button:hover {
-    background: #06D85F;
+    background-color: gainsboro;
 }
 
 .overlay1 {
@@ -367,265 +393,3 @@ h1 {
     position: relative;
     transition: all 5s ease-in-out;
 }
-
-/*@media screen and (max-width: 700px){*/
-    /*.box{*/
-        /*width: 70%;*/
-    /*}*/
-    /*.popup{*/
-        /*width: 70%;*/
-    /*}*/
-/*}*/
-/*!**/
- /** A better looking default horizontal rule*/
- /**!*/
-
-/*hr {*/
-    /*display: block;*/
-    /*height: 1px;*/
-    /*border: 0;*/
-    /*border-top: 1px solid #ccc;*/
-    /*margin: 1em 0;*/
-    /*padding: 0;*/
-/*}*/
-
-/*!**/
- /** Remove the gap between audio, canvas, iframes,*/
- /** images, videos and the bottom of their containers:*/
- /** https://github.com/h5bp/html5-boilerplate/issues/440*/
- /**!*/
-
-/*audio,*/
-/*canvas,*/
-/*iframe,*/
-/*img,*/
-/*svg,*/
-/*video {*/
-    /*vertical-align: middle;*/
-/*}*/
-
-/*!**/
- /** Remove default fieldset styles.*/
- /**!*/
-
-/*fieldset {*/
-    /*border: 0;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-/*}*/
-
-/*!**/
- /** Allow only vertical resizing of textareas.*/
- /**!*/
-
-/*textarea {*/
-    /*resize: vertical;*/
-/*}*/
-
-/*!* ==========================================================================*/
-   /*Browser Upgrade Prompt*/
-   /*========================================================================== *!*/
-
-/*.browserupgrade {*/
-    /*margin: 0.2em 0;*/
-    /*background: #ccc;*/
-    /*color: #000;*/
-    /*padding: 0.2em 0;*/
-/*}*/
-
-/*!* ==========================================================================*/
-   /*Author's custom styles*/
-   /*========================================================================== *!*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*!* ==========================================================================*/
-   /*Helper classes*/
-   /*========================================================================== *!*/
-
-/*!**/
- /** Hide visually and from screen readers*/
- /**!*/
-
-/*.hidden {*/
-    /*display: none !important;*/
-/*}*/
-
-/*!**/
- /** Hide only visually, but have it available for screen readers:*/
- /** https://snook.ca/archives/html_and_css/hiding-content-for-accessibility*/
- /***/
- /** 1. For long content, line feeds are not interpreted as spaces and small width*/
- /**    causes content to wrap 1 word per line:*/
- /**    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe*/
- /**!*/
-
-/*.visuallyhidden {*/
-    /*border: 0;*/
-    /*clip: rect(0 0 0 0);*/
-    /*-webkit-clip-path: inset(50%);*/
-    /*clip-path: inset(50%);*/
-    /*height: 1px;*/
-    /*margin: -1px;*/
-    /*overflow: hidden;*/
-    /*padding: 0;*/
-    /*position: absolute;*/
-    /*width: 1px;*/
-    /*white-space: nowrap; !* 1 *!*/
-/*}*/
-
-/*!**/
- /** Extends the .visuallyhidden class to allow the element*/
- /** to be focusable when navigated to via the keyboard:*/
- /** https://www.drupal.org/node/897638*/
- /**!*/
-
-/*.visuallyhidden.focusable:active,*/
-/*.visuallyhidden.focusable:focus {*/
-    /*clip: auto;*/
-    /*-webkit-clip-path: none;*/
-    /*clip-path: none;*/
-    /*height: auto;*/
-    /*margin: 0;*/
-    /*overflow: visible;*/
-    /*position: static;*/
-    /*width: auto;*/
-    /*white-space: inherit;*/
-/*}*/
-
-/*!**/
- /** Hide visually and from screen readers, but maintain layout*/
- /**!*/
-
-/*.invisible {*/
-    /*visibility: hidden;*/
-/*}*/
-
-/*!**/
- /** Clearfix: contain floats*/
- /***/
- /** For modern browsers*/
- /** 1. The space content is one way to avoid an Opera bug when the*/
- /**    `contenteditable` attribute is included anywhere else in the document.*/
- /**    Otherwise it causes space to appear at the top and bottom of elements*/
- /**    that receive the `clearfix` class.*/
- /** 2. The use of `table` rather than `block` is only necessary if using*/
- /**    `:before` to contain the top-margins of child elements.*/
- /**!*/
-
-/*.clearfix:before,*/
-/*.clearfix:after {*/
-    /*content: " "; !* 1 *!*/
-    /*display: table; !* 2 *!*/
-/*}*/
-
-/*.clearfix:after {*/
-    /*clear: both;*/
-/*}*/
-
-/*!* ==========================================================================*/
-   /*EXAMPLE Media Queries for Responsive Design.*/
-   /*These examples override the primary ('mobile first') styles.*/
-   /*Modify as content requires.*/
-   /*========================================================================== *!*/
-
-/*@media only screen and (min-width: 35em) {*/
-    /*!* Style adjustments for viewports that meet the condition *!*/
-/*}*/
-
-/*@media print,*/
-/*(-webkit-min-device-pixel-ratio: 1.25),*/
-/*(min-resolution: 1.25dppx),*/
-/*(min-resolution: 120dpi) {*/
-    /*!* Style adjustments for high resolution devices *!*/
-/*}*/
-
-/*!* ==========================================================================*/
-   /*Print styles.*/
-   /*Inlined to avoid the additional HTTP request:*/
-   /*http://www.phpied.com/delay-loading-your-print-css/*/
-   /*========================================================================== *!*/
-
-/*@media print {*/
-    /**,*/
-    /**:before,*/
-    /**:after {*/
-        /*background: transparent !important;*/
-        /*color: #000 !important; !* Black prints faster:*/
-                                   /*http://www.sanbeiji.com/archives/953 *!*/
-        /*box-shadow: none !important;*/
-        /*text-shadow: none !important;*/
-    /*}*/
-
-    /*a,*/
-    /*a:visited {*/
-        /*text-decoration: underline;*/
-    /*}*/
-
-    /*a[href]:after {*/
-        /*content: " (" attr(href) ")";*/
-    /*}*/
-
-    /*abbr[title]:after {*/
-        /*content: " (" attr(title) ")";*/
-    /*}*/
-
-    /*!**/
-     /** Don't show links that are fragment identifiers,*/
-     /** or use the `javascript:` pseudo protocol*/
-     /**!*/
-
-    /*a[href^="#"]:after,*/
-    /*a[href^="javascript:"]:after {*/
-        /*content: "";*/
-    /*}*/
-
-    /*pre {*/
-        /*white-space: pre-wrap !important;*/
-    /*}*/
-    /*pre,*/
-    /*blockquote {*/
-        /*border: 1px solid #999;*/
-        /*page-break-inside: avoid;*/
-    /*}*/
-
-    /*!**/
-     /** Printing Tables:*/
-     /** http://css-discuss.incutio.com/wiki/Printing_Tables*/
-     /**!*/
-
-    /*thead {*/
-        /*display: table-header-group;*/
-    /*}*/
-
-    /*tr,*/
-    /*img {*/
-        /*page-break-inside: avoid;*/
-    /*}*/
-
-    /*p,*/
-    /*h2,*/
-    /*h3 {*/
-        /*orphans: 3;*/
-        /*widows: 3;*/
-    /*}*/
-
-    /*h2,*/
-    /*h3 {*/
-        /*page-break-after: avoid;*/
-    /*}*/
-/*}*/
