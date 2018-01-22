@@ -6,49 +6,56 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
         <div id="Header1" class="Header">
             <p id="Header_text1">Collaboration</p>
-            <a class="button" id="GoTeam" href="team.html">Team Page</a>
+            <a class="big-button" id="GoTeam" href="team.html">Team Page</a>
         </div>
-
-        <div id="Header3" style="background-color: lavender; font-size: 30px;" class="Header">
+        <div id="Header3" style="background-color: lavender; font-size: 30px; height: 60px" class="Header">
             <p id="Header_text2" style="color: black">Team - XYZ</p>
+            <a href="#new-task-popup" id="AddTask" class="big-button">Add New Task</a>
             <!--<button class="button" id="AddTask">Add Task</button>-->
         </div>
-
         <div id="wrapper">
             <div id="TList1" class="TList" >
                 <div id="Card1" class="Card">
                     <p id="Name1" class="Name">ABC</p>
-                    <button class="user-add-task" >Add Task</button>
-                    <div id="select-task">Select Types To List
-                        <div class="filter">
-                            <input type="checkbox" Name="Filter">Doing<br>
-                            <input type="checkbox" Name="Filter">To-do<br>
+                    <a href="#new-task-popup" class="user-add-task" >Add Task</a>
+                    <div class="Check">
+                            <input type="checkbox" Name="Filter">Doing
+                            <input type="checkbox" Name="Filter">To-do
                             <input type="checkbox" Name="Filter">Done<br>
-                        </div>
                     </div>
-                    <p class="heading-text">Doing</p>
-                    <p id="Task1" class="Task">Do something</p>
-                    <p id="Task2" class="Task">Do something else</p>
-                    <p class="heading-text">To-do</p>
-                    <p id="Task3" class="Task">Do something</p>
-                    <p id="Task4" class="Task">Do something else</p>
-                    <p class="heading-text">Done</p>
-                    <p id="Task6" class="Task">Do something</p>
-                    <p id="Task7" class="Task">Do something else</p>
+                    <div class="sub-TList">
+                        <p class="heading-text">Doing</p>
+                        <p id="Task1" class="Task">Do something<br>
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                        <p id="Task2" class="Task">Do something else
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                        <p class="heading-text">To-do</p>
+                        <p id="Task3" class="Task">Do something
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                        <p id="Task4" class="Task">Do something else
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                        <p class="heading-text">Done</p>
+                        <p id="Task6" class="Task">Do something
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                        <p id="Task7" class="Task">Do something else
+                            <span class="due-date">25th January,2018</span>
+                        </p>
+                    </div>
                 </div>
-
-                <div id="Card1" class="Card">
-                    <p id="Name1" class="Name">ABC</p>
-                    <button class="user-add-task" >Add Task</button>
-                    <div id="select-task">Select Types To List
-                        <div class="filter">
-                            <input type="checkbox" Name="Filter">Doing<br>
-                            <input type="checkbox" Name="Filter">To-do<br>
-                            <input type="checkbox" Name="Filter">Done<br>
-                        </div>
+                <div id="Card2" class="Card">
+                    <p id="Name2" class="Name">ABC</p>
+                    <a href="#new-task-popup" class="user-add-task" >Add Task</a>
+                    <div class="Check">
+                        <input type="checkbox" Name="Filter">Doing
+                        <input type="checkbox" Name="Filter">To-do
+                        <input type="checkbox" Name="Filter">Done<br>
                     </div>
                     <p class="heading-text">Doing</p>
                     <p id="Task1" class="Task">Do something</p>
@@ -56,63 +63,106 @@
                     <p class="heading-text">To-do</p>
                     <p id="Task3" class="Task">Do something</p>
                     <p id="Task5" class="Task">Do something else</p>
+                </div>
+                <div id="Card3" class="Card">
+                    <p id="Name3" class="Name">ABC</p>
+                    <a href="#new-task-popup" class="user-add-task" >Add Task</a>
+                    <div class="Check">
+                        <input type="checkbox" Name="Filter">Doing
+                        <input type="checkbox" Name="Filter">To-do
+                        <input type="checkbox" Name="Filter">Done<br>
+                    </div>
+                    <p class="heading-text">Doing</p>
+                    <p class="heading-text">To-do</p>
                     <p class="heading-text">Done</p>
-                    <p id="Task6" class="Task">Do something</p>
-                    <p id="Task7" class="Task">Do something else</p>
+                </div>
+                <div id="Card3" class="Card">
+                    <p id="Name3" class="Name">ABC</p>
+                    <a href="#new-task-popup" class="user-add-task" >Add Task</a>
+                    <div class="Check">
+                        <input type="checkbox" Name="Filter">Doing
+                        <input type="checkbox" Name="Filter">To-do
+                        <input type="checkbox" Name="Filter">Done<br>
+                    </div>
+                    <p class="heading-text">Doing</p>
+                    <p class="heading-text">To-do</p>
+                    <p class="heading-text">Done</p>
                 </div>
             </div>
-
             <div id="Details">
                 <div id="ShowDetails">
-                    <p id="Task Details"> <p class="title"> Task Details: </p>Do something</p>
+                    <h1 style="text-align: center">Details</h1>
+                    <p id="Task Details"> <p class="title"> Task Title: </p>Do something</p>
+                    <p id="Task Details"> <p class="title"> Task Details: </p>You have to do this and that</p>
                     <p id="Assignee"> <p class="title">Assigned To: </p>Akash</p>
                     <p id="Due Date"> <p class="title">Due Date: </p>25th Jan, 2018</p>
-                    <p id="Others"> <p class="title">Other Members: </p>Milap</p>
+                    <div id="button-panel">
+                        <a class="small-button">Forward</a>
+                        <a class="small-button">Remove</a>
+                        <a href="#edit-task-popup" class="small-button">Edit</a>
+                        <br>
+                    </div>
                 </div>
-                <!--<form id="New Task">-->
-                    <!--Task Details:<br>-->
-                    <!--<input type="text">-->
-                    <!--<br>-->
-                    <!--Assign To:<br>-->
-                    <!--<select>-->
-                        <!--<option>ABC</option>-->
-                        <!--<option>XYZ</option>-->
-                    <!--</select><br>-->
-                    <!--Due Date:<br>-->
-                    <!--<input type="date">-->
-                    <!--<br>-->
-                    <!--<input type="submit" value="Submit">-->
-                    <!--<input type="button" value="Cancel">-->
-                <!--</form>-->
-
-                <!--<form id="Edit Task">-->
-                    <!--Task Details:<br>-->
-                    <!--<input type="text">-->
-                    <!--<br>-->
-                    <!--Assign To:<br>-->
-                    <!--<select>-->
-                        <!--<option>ABC</option>-->
-                        <!--<option>XYZ</option>-->
-                    <!--</select><br>-->
-                    <!--Due Date:<br>-->
-                    <!--<input type="date">-->
-                    <!--<br>-->
-                    <!--Status:<br>-->
-                    <!--<input type="radio" name="status">Todo<br>-->
-                    <!--<input type="radio" name="status">Doing<br>-->
-                    <!--<input type="radio" name="status">Done<br>-->
-
-                    <!--<input type="submit" value="Submit">-->
-                    <!--<input type="button" value="Cancel">-->
-                <!--</form>-->
-                <div id="button-panel">
-                    <button class="small-button">Forward</button>
-                    <button class="small-button">Remove</button>
-                    <button class="small-button" href="#Edit Task">Edit</button>
-                    <br>
-                    <button style="width: 100%; margin-top: 10px" class="small-button">Add New Task</button>
+                <div id="new-task-popup" class="overlay1">
+                    <div class="popup">
+                        <form id="NewTask">
+                            <h2 style="text-align: center">New Task</h2>
+                            Task Title:<br>
+                            <input type="text">
+                            <br>
+                            <br>
+                            Task Details:<br>
+                            <input type="text">
+                            <br>
+                            <br>
+                            Assign To:<br>
+                            <select>
+                                <option>ABC</option>
+                                <option>XYZ</option>
+                            </select><br>
+                            <br>
+                            Due Date:<br>
+                            <input type="date">
+                            <br>
+                            <br>
+                            <input type="submit" class="small-button" value="Add">
+                            <a href="#" class="small-button">Close</a>
+                        </form>
+                    </div>
                 </div>
-
+                <div id="edit-task-popup" class="overlay1">
+                    <div class="popup">
+                        <form id="EditTask">
+                            <h2 style="text-align: center">Edit Task</h2>
+                            Task Title:<br>
+                            <input type="text">
+                            <br>
+                            <br>
+                            Task Details:<br>
+                            <input type="text">
+                            <br>
+                            <br>
+                            Assign To:<br>
+                            <select>
+                                <option>ABC</option>
+                                <option>XYZ</option>
+                            </select>
+                            <br>
+                            <br>
+                            Due Date:<br>
+                            <input type="date">
+                            <br>
+                            <br>
+                            Status:<br>
+                            <input type="radio" name="status">Todo<br>
+                            <input type="radio" name="status">Doing<br>
+                            <input type="radio" name="status">Done<br>
+                            <br>
+                            <input type="submit" class="small-button" value="Update">
+                            <a href="#" class="small-button">Close</a>
+                        </form>
+                    </div>
+                <!--</div>-->
             </div>
 
 
