@@ -1,83 +1,100 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Team Page</title>
         <link rel="shortcut icon" href="favicon.ico"/>
         <link rel="stylesheet" href="css/main.css">
+
     </head>
 
     <body>
-        <div id="Header2" class="Header">
+
+    <div id="Header2" class="Header">
             <p id="Header_text">Collaboration</p>
             <a class="big-button" id="GoTask" href="index.html">Tasks</a>
         </div>
         <div id="Header3" style="background-color: lavender; font-size: 30px; height: 60px" class="Header">
             <p id="Header_text" style="color: black">Team - XYZ</p>
             <div>
-                <a style="font-size: 20px; height: 30px; color: black" id="AddUser" class="big-button" href="#popup1">Add User</a>
+                <a style="font-size: 20px; height: 30px; color: black" id="AddUser" class="big-button" href="#popup1" onclick="">Add User</a>
             </div>
         </div>
         <!--<div id="wrapper">-->
         <div id="UList1" class="UList" >
-            <div class="container">
-                <img src="img_avatar.png" alt="XYZ" style="width:100%">
-                <div class="NameContainer">
-                    <h4 style="text-align: center"><b>XYZ</b></h4>
-                </div>
-                <div class="overlay">
-                    <div id="User1Details" class="UserDetails">
-                        <p id="Name"> <p class="title"> Name: <a href="#popup2"><img class="edit" src="edit.jpg"></a></p>XYZ</p>
-                        <p id="Role"> <p class="title">Role: </p>XYZ </p>
-                        <p id="Pending"> <p class="title">Tasks Pending: </p>0</p>
-                        <p id="Done"> <p class="title">Tasks Done: </p>0</p>
-                    </div>
-                </div>
-            </div>
-            <div id="popup1" class="overlay1">
-                <div class="popup">
-                    <form>
-                        <h2 style="text-align: center">New User</h2>
-                        Name:<br>
-                        <input type="text">
-                        <br>
-                        <br>
-                        Image:<br>
-                        <input type="file">
-                        <br>
-                        <br>
-                        Role:<br>
-                        <input type="text">
-                        <br>
-                        <br>
-                        <input type="submit" class="small-button" value="Add">
-                        <a href="#" class="small-button">Close</a>
-                    </form>
-                </div>
-            </div>
-            <div id="popup2" class="overlay1">
-                <div class="popup">
-                    <form>
-                        <h2 style="text-align: center">Edit User</h2>
-                        Name:<br>
-                        <input type="text">
-                        <br>
-                        <br>
-                        Image:<br>
-                        <input type="file">
-                        <br>
-                        <br>
-                        Role:<br>
-                        <input type="text">
-                        <br>
-                        <br>
-                        <input type="submit" class="small-button" value="Add">
-                        <a href="#" class="small-button">Close</a>
-                    </form>
-                </div>
-            </div>
+            <!--<div class="container" id="user1">-->
+                <!--<img src="img_avatar.png" alt="XYZ" style="width:100%">-->
+                <!--<div class="NameContainer">-->
+                    <!--<h4 style="text-align: center"><b>XYZ</b></h4>-->
+                <!--</div>-->
+                <!--<div class="overlay">-->
+                    <!--<div id="User1Details" class="UserDetails">-->
+                        <!--<p id="Name"> <p class="title"> Name: <a href="#" class="edit">&#x274C;</a><a href="#popup2" class="edit">&#x270E;</a></p>XYZ</p>-->
 
-
+                        <!--<p id="Role"> <p class="title">Role: </p>XYZ </p>-->
+                        <!--<p id="Pending"> <p class="title">Tasks Pending: </p>0</p>-->
+                        <!--<p id="Done"> <p class="title">Tasks Done: </p>0</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
+
+    <div id="popup1" class="overlay1">
+        <div class="popup">
+            <form id="add-new-user">
+                <h2 style="text-align: center">New User</h2>
+                Name:<br>
+                <input id="Add_name" type="text" required maxlength="15">
+                <br>
+                <br>
+                Image:<br>
+                <input id="Add_image" type="file">
+                <br>
+                <br>
+                Role:<br>
+                <select id="Add_role" required>
+                    <option>Product Manager</option>
+                    <option>Project Manager</option>
+                    <option>Software Engineer</option>
+                    <option>Software tester</option>
+                    <option>Business Analyst</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" class="small-button" value="Add" >
+                <a href="#" class="small-button">Close</a>
+            </form>
+        </div>
+    </div>
+    <div id="popup2" class="overlay1">
+        <div class="popup">
+            <form id="update-user">
+                <h2 style="text-align: center">Edit User</h2>
+                Name:<br>
+                <input id="Edit_name" type="text">
+                <br>
+                <br>
+                Image:<br>
+                <input id="Edit_image" type="file">
+                <br>
+                <br>
+                Role:<br>
+                <select id="Edit_role" required>
+                    <option>Product Manager</option>
+                    <option>Project Manager</option>
+                    <option>Software Engineer</option>
+                    <option>Software tester</option>
+                    <option>Business Analyst</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" class="small-button" value="Update">
+                <a href="#" class="small-button">Close</a>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="team_script.js"></script>
+
     </body>
 </html>

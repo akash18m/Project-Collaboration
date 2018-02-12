@@ -43,9 +43,12 @@ body{
     max-height: 450px;
     overflow-y: auto;
 }
+
 .UList {
     float:left;
-    width: 75%;
+    width: 1413px;
+    width: 100%;
+    overflow-x: auto;
     height: 100%;
     white-space: nowrap;
     display: flex;
@@ -64,6 +67,7 @@ body{
     cursor: pointer;
     font-size: 15px;
     /*margin: 1px;*/
+    margin: 5px;
     padding: 3px;
     text-decoration: none;
     font-weight: bold;
@@ -82,6 +86,7 @@ body{
     background-color: white;
     text-decoration: none;
     cursor: pointer;
+    padding: 2px;
 }
 
 .user-add-task{
@@ -119,6 +124,7 @@ body{
 .container {
     position: relative;
     width: 220px;
+    min-width: 220px;
     height: auto;
     margin: 5px;
     padding: 20px;
@@ -151,8 +157,12 @@ body{
 
 .edit{
     float: right;
-    width: 13px;
-    height: 13px;
+    margin: 5px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    cursor:pointer;
 }
 
 .overlay1:target {
@@ -174,10 +184,9 @@ body{
 #Details {
     padding: 3px;
     border-spacing: 10px;
-    height: 100%;
-    overflow: scroll;
-    overflow-wrap: normal;
-    white-space: nowrap;
+    /*height: 100%;*/
+    overflow-wrap: break-word;
+    /*white-space: nowrap;*/
 }
 
 .UserDetails{
@@ -217,23 +226,29 @@ body{
 .Task{
     font-size: 15px;
     text-align: left;
-    background-color: gray;
+    background-color: lightblue;
     border: 2px solid black;
     text-wrap: normal;
     padding: 2px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.Task:hover{
+    box-shadow: 5px 5px #888888;
 }
 
 .due-date{
-    color: white;
+    color: red;
     text-align: right;
     display: block;
 }
 
 #button-panel{
+    display: flex;
     margin-right: 20%;
-    padding: 20px;
-    float: right;
+    /*padding: 10px;*/
+    /*float: right;*/
 }
 
 .ListItem{
@@ -306,6 +321,7 @@ li a:hover:not(.active) {
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity ease 1s;
+    z-index: 100;
     /*visibility: hidden;*/
     /*opacity: 0;*/
 }
